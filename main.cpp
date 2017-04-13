@@ -119,14 +119,14 @@ bool startGame (){
         cout << endl <<"Would you like to play? y/n? " << endl;
         cin >> play;
         
-        if (play == 'n'){
+        if (play == 'n' || play == 'N'){
             cout << endl << "Ok, come back soon! " << endl;
             return false;
         }
-        if (play != 'y' && play != 'n'){
+        if (play != 'y' && play != 'Y' && play != 'n' && play != 'No'){
             cout << endl << "Invalid entry! y or n only. " << endl;
         }
-    } while (play != 'y');
+    } while (play != 'y' && play != 'Y');
        
         return true;
 }
